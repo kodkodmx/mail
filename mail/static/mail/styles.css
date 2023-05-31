@@ -1,3 +1,21 @@
 textarea {
     min-height: 400px;
 }
+
+.email {
+    display: inline-block;
+    width: 32%;
+    text-align: left;
+    }
+
+.subject {
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+    }
+
+.timestamp {
+    display: inline-block;
+    width: 33%;
+    text-align: right;
+    }
