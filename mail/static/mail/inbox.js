@@ -129,7 +129,7 @@ function load_email(id, mailbox) {
     reply.addEventListener('click', () => {
       compose_email();
       document.querySelector('#compose-recipients').value = email.sender;
-      if (email.subject.includes('Re:')) {
+      if (email.subject.split(' ')[0] == 'Re:') {
         document.querySelector('#compose-subject').value = email.subject;
       }
       else {
