@@ -40,7 +40,18 @@ function compose_email() {
     .then(result => {
         // Print result
         console.log(result);
+    })
+    .catch(error => {
+        console.log('Error:', error);
+    }
+    );
+    function sleep(ms) {
+      return new Promise(resolve => setTimeout(resolve, ms));
+    }
+    sleep(999).then(() => {
+    load_mailbox('sent');
     });
+    return false;
   }
 }
 
